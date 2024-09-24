@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+        
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto px-5">
+    <nav>
+        <section class="sticky top-0 flex flex-col gap-10 bg-[white]">
+            <nav class="header">
+              <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <button><a href="./index.html" class="bg-[#B4F461] px-4 py-2 m-2 text-xl font-bold rounded-md">Home</a></button>
+                </div>
+                <div class="navbar-center">
+                    <div>
+                        <img src="./assets/logo.png">
+                    </div>
+                    <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end">
+                    <button class="flex flex-row py-4">
+                        <div class="max-w-5">
+                            <img src="./assets/coin.png">
+                        </div>
+                        <span  id="mainBalance" class="px-2">10000</span>BDT
+                    </button>
+                </div>
+              </div>
+            </nav>
+           </section>
+    </nav>
+   <main>
+       
+            <h1 class="text-2xl font-bold py-8 pb-2">Important FAQ</h1>
+            <div class="px-3 py-4 border-solid border-l border-t border-b border-r border-gray-200">
+               <button id="q1" onclick="qna1Function(question1)"> <h2 class="text-xl p-2 font-bold ">What is Document Object Model(DOM)?</h2></button>
+                <p id="ans1" class="text-sm text-gray-500"></p>
+            </div>
+            <div class="px-3 py-4 border-solid border-l border-t border-b border-r border-gray-200">
+              <button id="q2" onclick="qna2Function(question2)"><h2 class="text-xl p-2 font-bold ">How do you select an element from the DOM?</h2></button>
+                <p id="ans2" class="text-sm text-gray-500"></p>
+            </div>
+            <div  class="px-3 py-4 border-solid border-l border-t border-b border-r border-gray-200">
+               <button id="q3" onclick="qna3Function(question3)"><h2 class="text-xl p-2 font-bold ">What is event Delegation in context of the DOM, and why is it useful?</h2></button>
+                <p id="ans3"class="text-sm text-gray-500"></p>
+            </div>
+            <div class="px-3 py-4 border-solid border-l border-t border-b border-r border-gray-200">
+               <button id="q4" onclick="qna4Function(question4)"><h2 class="text-xl p-2 font-bold ">How do you manipulatean element's attributes and styles using the DOM?</h2></button>
+                <p id="ans4" class="text-sm text-gray-500" ></p>
+            </div>
+   </main>
+
+   <script src="./js/blog.js"></script>
+</body>
+</html>

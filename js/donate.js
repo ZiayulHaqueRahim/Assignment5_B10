@@ -1,7 +1,8 @@
 //Noakhali 
 
 
-document.getElementById('donateNoakhali').addEventListener('click',function(){
+document.getElementById('donateNoakhali').addEventListener('click',function(event){
+    event.preventDefault()
     let DonateAmount = Number(document.getElementById('noakhaliDonation').value)
     let TotalFunding = Number(document.getElementById('totalNoakhaliFund').innerText)
     let balance =Number(document.getElementById('mainBalance').innerText)
@@ -29,7 +30,8 @@ document.getElementById('donateNoakhali').addEventListener('click',function(){
 
 //Feni
 
-document.getElementById('donateFeni').addEventListener('click',function(){
+document.getElementById('donateFeni').addEventListener('click',function(event){
+    event.preventDefault()
     let DonateAmount = Number(document.getElementById('feniDonation').value)
     let TotalFunding = Number(document.getElementById('totalfeniFund').innerText)
     let balance =Number(document.getElementById('mainBalance').innerText)
@@ -55,7 +57,8 @@ document.getElementById('donateFeni').addEventListener('click',function(){
     
 })
 
-document.getElementById('donateQuota').addEventListener('click',function(){
+document.getElementById('donateQuota').addEventListener('click',function(event){
+    event.preventDefault()
     let DonateAmount = Number(document.getElementById('quotaDonation').value)
     let TotalFunding = Number(document.getElementById('totalQuotaFund').innerText)
     let balance =Number(document.getElementById('mainBalance').innerText)
@@ -68,6 +71,7 @@ document.getElementById('donateQuota').addEventListener('click',function(){
                 console.log(TotalFunding);
                 document.getElementById('mainBalance').innerText = balance;
                 document.getElementById('totalQuotaFund').innerText = TotalFunding
+                window.po
             }else{
                 alert('Not possible to donate')
             }
