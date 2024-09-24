@@ -13,9 +13,9 @@
 
 </head>
 <body class="container mx-auto px-5 ">
-   <section class="sticky top-0 flex flex-col gap-10 bg-[white]">
-    <nav class="header">
-      <div class="navbar bg-base-100">
+   <section class=" md:sticky top-0 flex flex-col gap-10 bg-[white] sm:py-6">
+    <nav class="header ">
+      <div class=" flex flex-col md:flex-row navbar bg-base-100">
         <div class="navbar-start">
             <button><a href="./blog.html" class="bg-[#B4F461] px-4 py-2 m-2 text-xl font-bold rounded-md">Blog</a></button>
         </div>
@@ -23,7 +23,7 @@
             <div>
                 <img src="./assets/logo.png">
             </div>
-            <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+            <h1 class=" text-xl md:text-2xl font-bold">Donate Bangladesh</h1>
         </div>
         <div class="navbar-end">
             <button class="flex flex-row py-4">
@@ -44,7 +44,7 @@
             </div>
             <div class="navbar-center">
                 <button>
-                    <a href="#" class="px-4 py-3 rounded-md text-xl font-bold border-solid border-l border-t border-b border-r border-gray-200">History</a>
+                    <a id="history" href="./history.html" class="px-4 py-3 rounded-md text-xl font-bold border-solid border-l border-t border-b border-r border-gray-200">History</a>
                 </button>
             </div>
         </div>
@@ -52,13 +52,13 @@
    </section>
     <main class="flex flex-col gap-4">
         
-        <section class="container flex flex-row justify-between border-solid border-l border-t border-b border-r border-gray-200 rounded-md p-4 pb-5">
+        <section class="container flex flex-col md:flex-row justify-between border-solid border-l border-t border-b border-r border-gray-200 rounded-md p-4 pb-5">
             <div class=" max-w-1/2">
                 <div class="img-container ">
                     <img src="./assets/noakhali.png ">
                 </div>
             </div>
-            <div class="flex flex-col max-w-sm  ">
+            <div class="flex flex-col  max-w-60 md:max-w-sm  ">
             <div>
                 <button class="flex flex-row py-4">
                     <div class="max-w-5">
@@ -77,14 +77,14 @@
                         id="noakhaliDonation"
                         class="input  input-bordered input-md w-full max-w-xs" />
                     </div>
-                    <div class="max-w-md pb-4">
-                        <button id="donateNoakhali"  class="btn btn-wide  rounded-lg bg-[#B4F461] w-96">Donate Now</button>
+                    <div class=" max-w-sm md:max-w-md pb-4">
+                        <button id="donateNoakhali"  class="btn btn-wide  rounded-lg bg-[#B4F461]  w-60 md:w-96">Donate Now</button>
                     </div>
             </div>
             </div>
         </section>
-        <section class="container flex flex-row justify-between border-solid border-l border-t border-b border-r border-gray-200 rounded-md p-4 pb-5">
-            <div class="max-w-1/2">
+        <section class="container flex flex-col md:flex-row justify-between border-solid border-l border-t border-b border-r border-gray-200 rounded-md p-4 pb-5">
+            <div class="max-w-60 md:max-w-1/2">
                 <div class="img-container ">
                     <img src="./assets/feni.png">
                 </div>
@@ -107,13 +107,13 @@
                         placeholder="Write donation Amount"
                         class="input input-bordered input-md w-full max-w-xs" />
                     </div>
-                    <div class="max-w-md pb-4">
-                        <button  id="donateFeni" class="btn btn-wide  bg-[#B4F461]   rounded-lg w-96">Donate Now</button>
+                    <div class=" max-w-sm md:max-w-md pb-4">
+                        <button  id="donateFeni" class="btn btn-wide  bg-[#B4F461]   rounded-lg  w-60 md:w-96">Donate Now</button>
                     </div>
             </div>
             </div>
         </section>
-        <section class="container flex flex-row justify-between border-solid border-l border-t border-b border-r border-gray-200 rounded-md p-4 pb-5">
+        <section class="container flex flex-col md:flex-row justify-between border-solid border-l border-t border-b border-r border-gray-200 rounded-md p-4 pb-5">
             <div class="pic1  max-w-1/2">
                 <div class="img-container ">
                     <img src="./assets/quota-protest.png">
@@ -137,8 +137,8 @@
                         placeholder="Write donation Amount"
                         class="input input-bordered input-md w-full max-w-xs" />
                     </div>
-                    <div class="max-w-md pb-4">
-                        <button id="donateQuota" class="btn btn-wide bg-[#B4F461]  rounded-lg  w-96">Donate Now</button>
+                    <div class=" max-w-sm md:max-w-md pb-4">
+                        <button id="donateQuota" class="btn btn-wide bg-[#B4F461]  rounded-lg w-60 md:w-96">Donate Now</button>
                     </div>
             </div>
             </div>

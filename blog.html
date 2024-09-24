@@ -12,19 +12,19 @@
 </head>
 <body class="container mx-auto px-5">
     <nav>
-        <section class="sticky top-0 flex flex-col gap-10 bg-[white]">
+        <section class=" md:sticky top-0 flex flex-col gap-10 bg-[white]">
             <nav class="header">
-              <div class="navbar bg-base-100">
-                <div class="navbar-start">
+              <div class="navbar  flex flex-col sm:gap-6 md:flex-row bg-base-100">
+                <div class="navbar-start sm:mb-5">
                     <button><a href="./index.html" class="bg-[#B4F461] px-4 py-2 m-2 text-xl font-bold rounded-md">Home</a></button>
                 </div>
-                <div class="navbar-center">
+                <div class="navbar-center sm:mb-5">
                     <div>
                         <img src="./assets/logo.png">
                     </div>
                     <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
                 </div>
-                <div class="navbar-end">
+                <div class="navbar-end sm:mb-5">
                     <button class="flex flex-row py-4">
                         <div class="max-w-5">
                             <img src="./assets/coin.png">
@@ -45,7 +45,7 @@
             </div>
             <div class="px-3 py-4 border-solid border-l border-t border-b border-r border-gray-200">
               <button id="q2" onclick="qna2Function(question2)"><h2 class="text-xl p-2 font-bold ">How do you select an element from the DOM?</h2></button>
-                <p id="ans2" class="text-sm text-gray-500"></p>
+                <p id="ans2" class="text-sm  w-60 md:w-auto text-gray-500"></p>
             </div>
             <div  class="px-3 py-4 border-solid border-l border-t border-b border-r border-gray-200">
                <button id="q3" onclick="qna3Function(question3)"><h2 class="text-xl p-2 font-bold ">What is event Delegation in context of the DOM, and why is it useful?</h2></button>

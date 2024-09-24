@@ -13,7 +13,7 @@ question1.addEventListener('click',function(){
     document.getElementById('ans2').innerText = ""
 })
 function qna2Function(question2){
-    document.getElementById('ans2').innerText = 'There are several methods like: -getElementById(),getElementsByClassNames(),getElementByTagName(),querrySelector(),querrySelectorAll() etc'
+    document.getElementById('ans2').innerText = 'getElementById(),querrySelectorAll() etc'
 }
 function qna3Function(question3){
     document.getElementById('ans3').innerText = 'Delegation means all activity left to their parent class.That means target elements activity delegated to its parent'
