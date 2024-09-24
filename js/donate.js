@@ -55,9 +55,9 @@ document.getElementById('donateFeni').addEventListener('click',function(){
     
 })
 
-document.getElementById('Donate').addEventListener('click',function(){
-    let DonateAmount = Number(document.getElementById('noakhaliDonation').value)
-    let TotalFunding = Number(document.getElementById('totalNoakhaliFund').innerText)
+document.getElementById('donateQuota').addEventListener('click',function(){
+    let DonateAmount = Number(document.getElementById('quotaDonation').value)
+    let TotalFunding = Number(document.getElementById('totalQuotaFund').innerText)
     let balance =Number(document.getElementById('mainBalance').innerText)
     if(DonateAmount >= 0){
         if(DonateAmount <= balance){
@@ -67,7 +67,7 @@ document.getElementById('Donate').addEventListener('click',function(){
                 console.log(balance);
                 console.log(TotalFunding);
                 document.getElementById('mainBalance').innerText = balance;
-                document.getElementById('totalNoakhaliFund').innerText = TotalFunding
+                document.getElementById('totalQuotaFund').innerText = TotalFunding
             }else{
                 alert('Not possible to donate')
             }
